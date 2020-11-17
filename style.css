@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+}
+.container {
+	max-width: 80%;
+	overflow: auto;
+}
+h1,
+h4 {
+	text-align: center;
+}
+.title-one {
+	font-weight: 200;
+	margin-top: 1rem;
+}
+.title-two {
+	font-weight: 600;
+}
+.subtitle {
+	width: 50%;
+	margin: auto;
+	font-weight: normal;
+	color: hsl(229, 6%, 66%);
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem 0;
+}
+.card {
+	width: 21rem;
+	padding: 0.8rem 1rem;
+	border-radius: 0.5rem;
+	text-align: right;
+	margin: 1rem auto;
+	border: 0.1rem solid hsl(229, 6%, 66%);
+}
+.card img {
+	margin: 1rem 0;
+}
+.card h3,
+.content {
+	text-align: left;
+}
+.content {
+	color: hsl(229, 6%, 66%);
+	margin-top: 0.5rem;
+}
+.supervisor {
+	border-top: 0.2rem solid hsl(180, 62%, 55%);
+	transform: translateY(8rem);
+}
+
+.team-builder {
+	border-top: 0.2rem solid hsl(0, 78%, 62%);
+}
+
+.karma {
+	border-top: 0.2rem solid hsl(34, 97%, 64%);
+	order: 2;
+}
+.calculator {
+	border-top: 0.2rem solid hsl(212, 86%, 64%);
+	order: 1;
+	transform: translateY(8rem);
+}
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+	.container {
+		max-width: 100%;
+		margin: 1.5rem;
+	}
+	.title-one {
+		margin-top: 1rem;
+	}
+	.title-one,
+	.title-two {
+		font-size: 1.5em;
+	}
+	.subtitle {
+		margin: 1rem 0 2rem 0;
+		width: 100%;
+	}
+	.cards {
+		display: block;
+	}
+	.card {
+		max-width: 95%;
+	}
+	.supervisor {
+		transform: translateY(0);
+	}
+	.calculator {
+		order: 1;
+		transform: translateY(0);
+	}
+	.card img {
+		margin: 1.5rem 0;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.container {
+		max-width: 100%;
+		margin: 2rem;
+	}
+	.subtitle {
+		margin: 1rem auto 2rem;
+		width: 90%;
+	}
+	.cards {
+		display: block;
+	}
+	.card {
+		width: 25rem;
+		margin: 1.5rem auto;
+	}
+	.supervisor {
+		transform: translateY(0);
+	}
+	.calculator {
+		order: 1;
+		transform: translateY(0);
+	}
+}
